@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+
+@import './breakpoints.scss', './minxins.scss';
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+  margin-top: 0.6em;
+  @include responsive($md, font-size, 6em);
+  @include responsive($lg, font-size, 8em);
+  @include responsive($xl, font-size, 8em);
+
+  line-height: 0.9em;
+  font-weight: 800;
+
+  span {
+    color: rgb(255, 29, 142);
+  }
+}
+
+h2,
+a,
+nav a {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+  color: #888;
+}
